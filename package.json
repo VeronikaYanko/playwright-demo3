@@ -4,11 +4,12 @@
   "description": "Playwright end-to-end tests for localcoding.us",
   "scripts": {
     "test": "playwright test",
+    "test:debug": "playwright test --headed",
     "report": "playwright show-report"
   },
   "author": "Veronika Yanko",
   "license": "ISC",
-  "dependencies": {
-    "@playwright/test": "1.38.0"
+  "devDependencies": {
+    "@playwright/test": "^1.38.1"
   }
 }
