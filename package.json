@@ -8,7 +8,10 @@
   },
   "author": "Veronika Yanko",
   "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.6.3"
+  },
   "dependencies": {
-    "@playwright/test": "1.38.0"
+    "@playwright/test": "1.38.1"
   }
 }
