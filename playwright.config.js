@@ -1,6 +1,10 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
 
+
+
+
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -12,6 +16,7 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 module.exports = defineConfig({
   testDir: './tests',
+
   workers: 1 ,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
@@ -22,6 +27,7 @@ module.exports = defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    testIdAttribute: 'data-qa',
   },
 
   /* Configure projects for major browsers */
