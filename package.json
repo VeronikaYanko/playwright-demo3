@@ -5,7 +5,8 @@
   "scripts": {
     "test": "playwright test",
     "test:debug": "playwright test --headed",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "lint": "prettier ./ --check"
   },
   "author": "Veronika Yanko",
   "license": "ISC",
